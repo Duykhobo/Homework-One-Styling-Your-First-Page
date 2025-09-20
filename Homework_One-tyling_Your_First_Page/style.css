@@ -1,0 +1,51 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* end reset css */
+
+/* Write a CSS rule to style the body tag to modify the font family and font size properties. */
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+
+/* Write a CSS rule to style the header tag to modify the background color property. */
+header {
+  background-color: pink;
+}
+/* Write a CSS rule to style the nav tag to modify the background color property. */
+nav {
+  background-color: lightblue;
+}
+/* Write a CSS rule to style the main tag to modify the background color and font size property */
+main {
+  background-color: lightgreen;
+  font-size: 1.8rem;
+}
+/* Write a CSS rule to style the footer tag to modify the background color property. */
+footer {
+  background-color: lightcoral;
+}
+/* Write a CSS rule to style the li tag to modify the display and width properties. */
+li {
+  display: inline-block;
+  width: 10rem;
+}
+/* Write a CSS rule to style the h1 tag to modify the text alignment, font family, and color  properties.  */
+h1 {
+  text-align: center;
+  font-family: cursive;
+  color: darkblue;
+}
+/* Write a CSS rule to style the p tag to modify the line height property.   */
+p {
+  line-height: 2rem;
+}
