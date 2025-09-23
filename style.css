@@ -14,28 +14,61 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   color: #333333;
-  background-color: #f0f8ff; /* xanh da trời nhạt hơn, dịu mắt */
+  background-color: #f0f8ff; /* nền dịu mắt */
   line-height: 1.6;
   text-align: left;
+}
+/* --- Skip link --- */
+.skip-link {
+  position: absolute;
+  top: 10px; /* hiển thị luôn */
+  left: 10px;
+  background: #ff6f61;
+  color: white;
+  padding: 0.5rem;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
 }
 
 /* --- Header --- */
 header {
-  background-color: #8fc1a9; /* xanh lá dịu, mềm mại */
+  background-color: #8fc1a9; /* xanh lá dịu mắt */
   color: #ffffff;
   text-align: center;
   padding: 2rem;
-  border-bottom: 0.3rem solid #d1e7dd; /* viền nhẹ tạo khung */
+  border-bottom: 0.3rem solid #d1e7dd;
 }
 
 header img {
-  width: 18rem; /* nhỏ hơn 1 chút, cân đối */
+  width: 18rem;
   display: block;
   margin: 1rem auto;
-  border-radius: 1rem; /* bo tròn mềm mại */
+  border-radius: 1rem;
 }
 
 /* --- Navigation --- */
+nav {
+  display: inline-block;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav img {
+  width: 10%;
+  vertical-align: middle;
+}
+
+/* nav li đã comment out */
+/* nav ul li { */
+/*   padding: 0; */
+/*   list-style: none; */
+/* } */
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -56,28 +89,44 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #b2e0d0; /* hover dịu mắt */
+  background-color: #b2e0d0;
   color: #333333;
 }
 
-/* --- Main content --- */
-main {
-  padding: 2rem;
+/* --- Main content flex (default) --- */
+.flex {
   display: flex;
-  flex-wrap: wrap; /* ảnh tự xuống dòng */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
 }
 
+/* --- Grid class --- */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  align-items: start;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+/* --- Main img fallback --- */
 main img {
-  width: 12rem; /* 120px */
+  width: 12rem;
   border-radius: 1rem;
   display: inline-block;
   vertical-align: top;
 }
 
+/* --- Links in main --- */
 main a {
-  color: #ff6f61; /* cam/hồng nổi bật */
+  color: #ff6f61;
   text-decoration: none;
 }
 
@@ -87,7 +136,7 @@ main a:hover {
 
 /* --- Footer --- */
 footer {
-  background-color: #c0e0d8; /* xanh nhạt dịu mắt */
+  background-color: #c0e0d8;
   color: #333333;
   text-align: center;
   padding: 2rem;
