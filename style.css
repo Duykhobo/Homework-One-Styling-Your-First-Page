@@ -1,10 +1,11 @@
-/* reset css */
+/* --- Reset CSS --- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* --- Font cơ bản --- */
 html {
   font-size: 62.5%;
 }
@@ -12,24 +13,92 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
+  color: #333333;
+  background-color: #f0f8ff; /* xanh da trời nhạt hơn, dịu mắt */
+  line-height: 1.6;
+  text-align: left;
 }
 
+/* --- Header --- */
 header {
-  background-color: #f0f0f0;
-  padding: 2rem;
+  background-color: #8fc1a9; /* xanh lá dịu, mềm mại */
+  color: #ffffff;
   text-align: center;
+  padding: 2rem;
+  border-bottom: 0.3rem solid #d1e7dd; /* viền nhẹ tạo khung */
 }
 
-nav {
-  background-color: aquamarine;
+header img {
+  width: 18rem; /* nhỏ hơn 1 chút, cân đối */
+  display: block;
+  margin: 1rem auto;
+  border-radius: 1rem; /* bo tròn mềm mại */
 }
 
+/* --- Navigation --- */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #b2e0d0; /* hover dịu mắt */
+  color: #333333;
+}
+
+/* --- Main content --- */
 main {
-  background-color: aqua;
-  font-size: 1.2rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap; /* ảnh tự xuống dòng */
+  justify-content: center;
+  gap: 1rem;
 }
 
+main img {
+  width: 12rem; /* 120px */
+  border-radius: 1rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+main a {
+  color: #ff6f61; /* cam/hồng nổi bật */
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+/* --- Footer --- */
 footer {
-  background-color: pink;
+  background-color: #c0e0d8; /* xanh nhạt dịu mắt */
+  color: #333333;
+  text-align: center;
+  padding: 2rem;
+  line-height: 1.5;
+  border-top: 0.3rem solid #8fc1a9;
 }
 
+footer a {
+  color: #ff6f61;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
